@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>ROCK<br>PAPER<br>SCISSORS</h1>
+        <div class="score-box">
+            <span>SCORE</span>
+            <span id="score">0</span>
+        </div>
+    </div>
+    <div id="pick-screen">
+        <div class="pick-container">
+            <div class="circle paper" onclick="Choose('paper')">
+                <span></span>
+            </div>
+            <div class="circle scissor" onclick="Choose('scissor')">
+                <span></span>
+            </div>
+            <div class="circle rock" onclick="Choose('rock')">
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div id="result-screen" style="display: none;">
+        <div class="result-container">
+            <div class="result-col">
+                <span>YOU PICKED</span>
+                <div class="circle" id="player-choice">
+                    <span></span>
+                </div>
+            </div>
+            <div class="result-col">
+                <h1 id="result"></h1>
+                <button onclick="PlayAgain()">PLAY AGAIN</button>
+            </div>
+            <div class="result-col">
+                <span>THE HOUSE PICKED</span>
+                <div class="circle" id="opponent-choice">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
